@@ -6,12 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day2_U0201 {
-//t0201
-	public static void main(String[] args) {
-	
+
+	public void t0201() {
 		//browser launch
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.omrbranch.com");
+		driver.get("https://www.omrbranch.com/");
 		driver.manage().window().maximize();
 		WebElement txtUserName =driver.findElement(By.id("email"));
 		txtUserName.sendKeys("greenstechchennaiomr@gmail.com");
@@ -19,6 +18,10 @@ public class Day2_U0201 {
 		txtPassWord.sendKeys("Greens@123");
 		
 	}
+public static void main(String[] args) {
+	Day2_U0201 m = new Day2_U0201();
+	m.t0201();
+}	
 	
 }
 
@@ -26,9 +29,8 @@ public class Day2_U0201 {
 
 
 
-package com.omrbranch.day2;
 
-import java.util.List;
+package com.omrbranch.day2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -36,8 +38,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day2_U0202 {
-//t0202	
-public static void main(String[] args) {
+
+public void t0202() {
 	WebDriver driver = new ChromeDriver();
 	driver.get("https://www.omrbranch.com/apitestingtraininginchennaiomr");
 	driver.manage().window().maximize();
@@ -49,12 +51,95 @@ public static void main(String[] args) {
 	 txtPhone.sendKeys("99441 52058");
 	 WebElement txtEmail = driver.findElement(By.id("email"));
 	 txtEmail.sendKeys("greenstechchennaiomr@gmail.com");
-	 // WebElement txtAddress = driver.findElement(By.cssSelector("form-control address"));
-	 //txtAddress.sendKeys("ICICI Bank Upstairs, Balamurugan Garden,Plot No.19, Landmark:, opposite to Sangeetha hotel,okkiam,Chennai,Tamilnadu 600097");
+	 WebElement txtAddress = driver.findElement(By.xpath("//textarea[@class='form-control address']"));
+	 txtAddress.sendKeys("ICICI Bank Upstairs, Balamurugan Garden,Plot No.19, Landmark:, opposite to Sangeetha hotel,okkiam,Chennai,Tamilnadu 600097");
 	 WebElement txtPassWord = driver.findElement(By.id("password"));
 	 txtPassWord.sendKeys("Greens@123");
 	 WebElement txtConfirmPass = driver.findElement(By.id("confirm-password"));
 	 txtConfirmPass.sendKeys("Greens@123");
 }
+public static void main(String[] args) {
+	Day2_U0202 m = new Day2_U0202();
+	m.t0202();
+}	
+}
+
+
+
+
+
+
+package com.omrbranch.day2;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Day2_U0203 {
+	
+public void t0203() {
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://www.traininginomr.co.in/contact/");
+	driver.manage().window().maximize();
+}	
+public static void main(String[] args) {
+	Day2_U0203 m = new Day2_U0203();
+	m.t0203();
+}
+
+
+}
+
+
+
+
+
+package com.omrbranch.day2;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Day2_U0204 {
+
+	public void t0204() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.instagram.com");
+		driver.manage().window().maximize();
+		WebElement txtUserName = driver.findElement(By.name("username"));
+		txtUserName.sendKeys("velmurugansirgtomr");
+		WebElement txtPassword =driver.findElement(By.name("password"));
+		txtPassword.sendKeys("Greens@123");
+		}
+public static void main(String[] args) {
+	Day2_U0204 m = new Day2_U0204();
+	m.t0204();
 	
 }
+}
+
+
+
+
+
+package com.omrbranch.day2;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Day2_U0205 {
+
+	public void t0205() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.netbanking.hdfcbank.com/netbanking/");
+		driver.manage().window().maximize();
+	
+	}
+public static void main(String[] args) {
+	Day2_U0205 m = new Day2_U0205();
+	m.t0205();
+}
+}
+
+
+
+
